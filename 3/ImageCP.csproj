@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="input.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="ScottPlot" Version="5.0.39" />
+      <PackageReference Include="ScottPlot.WinForms" Version="5.0.39" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="image.jpg" />
+      <EmbeddedResource Include="image.jpg" />
+    </ItemGroup>
+</Project>
